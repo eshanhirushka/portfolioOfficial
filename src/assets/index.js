@@ -10,6 +10,9 @@ import facebook from "./facebook.png";
 import linkedin from "./linkedin.png";
 import instagram from "./instagram.png";
 import logotitle from "./logo-color.svg";
+import nyc from "./NYC.png"
+import sltc from "./download.png"
+import tharaka from "./tharaka.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -38,8 +41,11 @@ import project3 from "./project3.png";
 import project4 from "./project4.png";
 import project5 from "./project5.png";
 import project6 from "./project6.png";
+import project7 from "./project7.png";
+import project8 from "./project8.png";
 
 import team1 from "./team-1.jpg";
+import team2 from "./team-2.jpg";
 
 import me from "./me.jpg";
 import CV_Duncan from "./CV_Duncan.png";
@@ -80,6 +86,8 @@ export {
   project4,
   project5,
   project6,
+  project7,
+  project8,
   me,
   mysql,
   CVDoc,
@@ -89,5 +97,9 @@ export {
   instagram,
   profile,
   team1,
+  team2,
   logotitle,
+  nyc,
+  sltc,
+  tharaka,
 };

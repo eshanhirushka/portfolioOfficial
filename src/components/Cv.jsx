@@ -1,5 +1,5 @@
-import React from "react"
-import { motion } from "framer-motion"
+import React from "react";
+import { motion } from "framer-motion";
 import Tilt from "react-tilt";
 
 import { styles } from "../styles"
@@ -8,7 +8,11 @@ import { fadeIn, textVariant } from "../utils/motion"
 import { CVDuncan, cvDescription, socialLinks } from "../constants"
 import CVDoc from "../assets/Eshan Hirushka.pdf"
 
-const Card = ({ index, gmail, tel, address, name, image }) => (
+const Card = ({ index, gmail, tel, address, name, image }) => {
+  
+  const isMobile = window.innerWidth <= 600;
+
+  return (
   <motion.div
     variants={fadeIn("right", "spring", index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
@@ -36,7 +40,7 @@ const Card = ({ index, gmail, tel, address, name, image }) => (
     </div>
       <div className="mt-5 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
-          <p className="text-white font-medium text-[16px]">
+          <p className={`text-white font-medium  ${isMobile ? 'text-[13px]' : 'text-[16px]'}`}>
             {name}
           </p>
         </div>
@@ -44,7 +48,7 @@ const Card = ({ index, gmail, tel, address, name, image }) => (
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
         <a href="tel:{tel}">
-        <p>
+        <p className={`${isMobile ? 'text-[12px]' : ''}`}>
             {tel}
         </p>
         </a>
@@ -53,7 +57,7 @@ const Card = ({ index, gmail, tel, address, name, image }) => (
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
         <a href="mailto:{gmail}">
-        <p>
+        <p className={`${isMobile ? 'text-[12px]' : ''}`}>
             {gmail}
         </p>
         </a>
@@ -61,14 +65,14 @@ const Card = ({ index, gmail, tel, address, name, image }) => (
       </div>
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
-        <p>
+        <p className={`${isMobile ? 'text-[12px]' : ''}`}>
             {address}
         </p>
         </div>
       </div>
     </div>
   </motion.div>
-)
+)}
 
 const CV = () => {
   return (
@@ -114,7 +118,7 @@ const CV = () => {
                 </motion.div>
             </Tilt>
                 
-                <div className="gap-3 w-full h-full rounded-full flex justify-center items-center cursor-pointers">
+                <div className="gap-2 w-full h-full rounded-full flex justify-center items-center cursor-pointers">
                 {socialLinks.map((socialLinks, index) => (
                     <Tilt
                     key={index}
@@ -136,7 +140,7 @@ const CV = () => {
                 </div>
             </div>
           </div>
-          <div className="text-center mt-2">I'm looking forward to working with you.</div>
+          <div className="text-center mt-2">I'm looking forward to work with you.</div>
         </motion.div>
       </div>
     </div>

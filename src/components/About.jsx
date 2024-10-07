@@ -52,9 +52,9 @@ const About = () => {
           I am a well-motivated and hard-working individual who graduated from General Sir John Kotelawala Defence University with BSc In Information Technology. I have good knowledge of HTML, CSS, Bootstrap, JS, React, Node.JS, Three.JS and Vue. Also, I have experience with MySQL, photoshop, XD, tailwind CSS, sanity io, and WordPress.<br />
           <br /> I can and love to work in a team. I can organize myself for
           remote work also. The experience gained is not just in the treasury of
-          skills, but is actively used in product development. I like to learn
+          skills, but is actively used in project development. I like to learn
           from more experienced colleagues, in addition to self-study. <br />
-          <br /> There are already over 5 non-commercial projects on my GitHub.
+          <br /> There are already over 7 non-commercial projects on my GitHub.
           Also I plan to improve my skills in the field of mobile development
           using the React Native framework.
         </motion.p>
@@ -66,7 +66,7 @@ const About = () => {
           >
             <div
               options={{ max: 45, scale: 1, speed: 450 }}
-              className="bg-tertiary rounded-[20px] min-h-[400px] flex justify-evenly items-center flex-col overflow-hidden"
+              className="bg-tertiary rounded-[20px] min-h-[312px] flex justify-evenly items-center flex-col overflow-hidden"
             >
               <img
                 src={ me }

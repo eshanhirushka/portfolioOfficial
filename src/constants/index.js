@@ -26,7 +26,8 @@ import {
   project4,
   project5,
   project6,
-  me,
+  project7,
+  project8,
   CV_Duncan,
   github,
   instagram,
@@ -34,6 +35,10 @@ import {
   linkedin,
   profile,
   team1,
+  team2,
+  nyc,
+  sltc,
+  tharaka,
 } from "../assets";
 
 const CVDuncan = CV_Duncan
@@ -90,6 +95,10 @@ const technologies = [
     icon: javascript,
   },
   {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
     name: "Bootstrap",
     icon: bootstrap,
   },
@@ -100,11 +109,11 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
+  },/* 
   {
     name: "Vue JS",
     icon: vuejs,
-  },
+  }, */
   {
     name: "Node JS",
     icon: nodejs,
@@ -112,10 +121,6 @@ const technologies = [
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "MySQL",
@@ -147,7 +152,7 @@ const education = [
     company_name: "Ampara",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2024 - Aug 2017",
+    date: "Jan 2014 - Aug 2017",
     points: [
       "GCE Advanced Level Examination in Commerce",
     ],
@@ -157,7 +162,7 @@ const education = [
     company_name: "Rathmalana",
     icon: shopify,
     iconBg: "#E6DEDD",
-    date: "Jan 2018 - Feb 2022",
+    date: "Jan 2018 - Dec 2021",
     points: [
       "BSc (Hons) in Information Technology",
     ],
@@ -177,6 +182,40 @@ const experiences = [
       "SEO & Google Analytics",
     ],
   },
+  {
+    title: "Manager",
+    company_name: "Tharaka Wine Stores",
+    icon: tharaka,
+    iconBg: "#E6DEDD",
+    date: "Feb 2022 - June 2023",
+    points: [
+      "Involved in managing our family business.",
+    ],
+  },
+  {
+    title: "Information Technology Instuctor",
+    company_name: "National Youth Corps",
+    icon: nyc,
+    iconBg: "#E6DEDD",
+    date: "June 2023 - Oct 2024",
+    points: [
+      "Basic concepts of IT",
+      "Office Suite",
+      "Photoshop, CoralDRAW, Flash, Wordpress",
+    ],
+  },
+  {
+    title: "Teaching Assistant - Part Time",
+    company_name: "SLTC Research University",
+    icon: sltc,
+    iconBg: "#E6DEDD",
+    date: "June 2022 - Oct 2024",
+    points: [
+      "Providing support for students' academic activities",
+      "Invigilating Exams",
+      "Managing documents",
+    ],
+  },
 ];
 
 const testimonials = [
@@ -186,7 +225,7 @@ const testimonials = [
     name: "Ajantha Lakmal",
     designation: "Senior Software Engineer",
     company: "CMS",
-    image: "https://ajanthalakmal.tk/img/ajantha.jpg",
+    image: "https://bkdevops.lk/wp-content/uploads/2022/09/176835786_1119769988450278_8619451661225816387_n_edited.jpg.webp",
   },
   {
     testimonial:
@@ -202,26 +241,49 @@ const testimonials = [
     name: "Dimantha Ranganath",
     designation: "QA Engineer",
     company: "Embla",
-    image: "https://scontent.fcmb11-1.fna.fbcdn.net/v/t39.30808-1/271562379_2052145314959739_3334042707408712869_n.jpg?stp=dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeGD86OwM6S-7FReLExwU4OkTH-GV7D6PBxMf4ZXsPo8HFTMSbxi9-qIb2-6NPCWhmedQ1XjG09dqJkPC7Ry2kfi&_nc_ohc=dSxFbbegEDYAX_6Rg7z&_nc_ht=scontent.fcmb11-1.fna&oh=00_AfDFL-_dxkueDunZCJqMZg72nRIGo2zMwTLpXzyXbsUO4Q&oe=64178E99",
+    image: team2,
   },
 ];
 
 const projects = [
   {
-    name: "Reach Me",
+    name: "TshirtMaven",
     description:
-      "Reach Me is a social media platform that enables users to create their profiles, share images, and connect with others through liking, and commenting. and also users can search, and discover their interested content areas. As example cars, animals. And Also the website can be accessed with computers, smartphones, and tablets.",
+      "TshirtMaven is a versatile 3D platform that empowers users to customize their t-shirt designs to their liking. Users have the option to either create their own design or request assistance from an AI algorithm that can generate designs according to their specifications. Once the design is complete, users can rotate and zoom in/out to view the design from various angles. To further customize their experience, users can download the design as a PNG file and choose any angle or name they desire.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "sanity.io(headless cms)",
+        name: "Three.js",
         color: "pink-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind.CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project7,
+    source_code_link: "https://github.com/eshanhirushka/TshirtMaven.git",
+    category: "React",
+    project_link: "https://tshirtmaven.netlify.app/",
+  },
+  {
+    name: "Reach Me",
+    description:
+      "Reach Me is a social media platform that empowers users to create personalized profiles, share captivating images, and interact with others through likes and comments. Additionally, users can explore and discover content that piques their interests, such as images related to cars and animals. Whether you're using a computer, smartphone, or tablet, Reach Me is easily accessible and optimized for all devices. Join the community of users today and unlock a world of social connectivity and discovery.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sanity.io(cms)",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind.CSS",
         color: "green-text-gradient",
       },
     ],
@@ -233,10 +295,10 @@ const projects = [
   {
     name: "Yariga",
     description:
-      "Yariga website is a comprehensive platform that allows users to manage their properties. With the Yariga, users can add, update, and delete properties. The website also automatically locates the location of properties. ongoing changes are adding booking or buying with a payment gateway and messaging.",
+      "Yariga is website that simplifies the management of properties. With Yariga, users can easily add, update, and delete properties, while the website automatically locates the location of each property for effortless tracking. Ongoing developments include the addition of booking and buying functionality, which will enable users to easily secure properties with a secure payment gateway. Stay tuned for these exciting new features, and take control of your property management with Yariga.",
     tags: [
       {
-        name: "refine",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
@@ -244,7 +306,7 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MongoDB",
         color: "green-text-gradient",
       },
     ],
@@ -256,7 +318,7 @@ const projects = [
   {
     name: "TB Cloths",
     description:
-      "TH Cloths' e-commerce platform offers a comprehensive shopping experience where users can select items, choose quantities, and add them to their cart. Users can adjust item quantities or remove items, through the cart. When ready to complete their purchase, users can proceed to the Stripe payment gateway to finalize their transactions.",
+      "TH Cloths' e-commerce platform provides a seamless shopping experience for users, allowing them to easily browse through various items and add their desired products to the cart. The platform enables users to modify their cart by adjusting the quantities or removing any items before proceeding to checkout. To complete their purchase, users can securely make their payment through the Stripe payment gateway, ensuring a smooth and hassle-free transaction process.",
     tags: [
       {
         name: "Next",
@@ -279,7 +341,7 @@ const projects = [
   {
     name: "Post Me",
     description:
-      "Post Me is a social media platform that enables users to create their thoughts about a person as family, friends, or strangers anonymously or with identity. after adding a thought website will be created a nice random light color card to keep their thought and display it.",
+      "Post Me is a unique social media platform that allows users to share their thoughts about me in a creative and anonymous way. Users can express their feelings about me as family, friend, or even stranger, with the option to reveal their identity if they choose to do so. Once a thought is submitted, the website generates a beautiful and random light-colored card to preserve and display the thought. This creates a engaging way for users to share their thoughts about me.",
     tags: [
       {
         name: "Vue",
@@ -296,13 +358,13 @@ const projects = [
     ],
     image: project4,
     source_code_link: "https://github.com/eshanhirushka/postme.git",
-    category: "React",
+    category: "Vue",
     project_link: "https://posttme.netlify.app",
   },
   {
     name: "Freight Forwader",
     description:
-      "A freight forwarder website is a platform that provides information and services related to the transportation of goods. It serves as a hub for businesses and individuals who need assistance in shipping products to various destinations. It provides a form to get details of who needs service.",
+      "A freight forwarder website is a one-stop-shop platform that caters to businesses and individuals seeking assistance in transporting their goods to different destinations. The website serves as a hub for information and services related to the shipping process, making it easier for customers to navigate through the complexities of the logistics industry. Additionally, the website provides an easy-to-use form where users can input their details to request shipping services tailored to their needs.",
     tags: [
       {
         name: "HTML",
@@ -320,30 +382,7 @@ const projects = [
     image: project5,
     source_code_link: "https://github.com/eshanhirushka/freight.git",
     category: "HTML",
-    project_link: "https://vercel.com/eshanhirushka/freight",
-  },
-  {
-    name: "Portfolio",
-    description:
-      "A portfolio website is a platform that showcases an individual or company's work, accomplishments, and skills to potential clients, employers, or collaborators. The website includes a collection of examples of past work, professional background details, education, and relevant experience.",
-    tags: [
-      {
-        name: "HTML",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "js",
-        color: "yello-text-gradient",
-      },
-    ],
-    image: project6,
-    source_code_link: "https://github.com/eshanhirushka/freight.git",
-    category: "HTML",
-    project_link: "https://portfolioeh.vercel.app",
+    project_link: "https://freight-dun.vercel.app",
   },
 ];
 

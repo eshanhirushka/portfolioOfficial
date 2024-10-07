@@ -31,6 +31,7 @@ const Ball = (props) => {
           scale={1}
           map={decal}
           flatShading
+          enableZoom={false}
         />
       </mesh>
     </Float>
